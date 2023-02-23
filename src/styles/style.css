@@ -1,0 +1,277 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+}
+
+input:focus {
+	outline: none;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+a {
+	text-decoration: none;
+}
+
+/* MOBILE NAV */
+.list-navigation {
+	list-style: none;
+	color: white;
+	border-bottom: 1px solid hsl(0deg 0% 36%);
+}
+
+.list-navigation li {
+	padding-bottom: 1.75rem;
+	font-size: 17px;
+	font-weight: bold;
+}
+
+.list-navigation li a {
+	color: white;
+	text-decoration: none;
+}
+
+/* DESKTOP NAV */
+.desktop-nav {
+	display: none;
+}
+
+.side-jumbotron-description {
+	margin-right: 1.25rem;
+	margin-left: 1.25rem;
+}
+
+.side-jumbotron-description h1 {
+	color: hsl(260, 8%, 14%);
+	font-size: 39px;
+	line-height: 37px;
+	margin-top: 1.25rem;
+	margin-bottom: 1.25rem;
+}
+
+.side-jumbotron-description P {
+	color: hsl(257, 7%, 63%);
+	margin-bottom: 1.5rem;
+}
+
+.link-form-wrapper {
+	border-radius: 15px;
+	margin-bottom: 1.25rem;
+	background-color: hsl(257,27%,26%);
+	background-image: url(/static/media/bg-boost-mobile.47ef0c28.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 1.25rem;
+	background-position: 50px -24px;
+}
+
+.input-form {
+	margin-bottom: 15px;
+}
+
+.input-form input {
+	text-overflow: ellipsis;
+	padding: 9px 10px;
+	font-weight: 100;
+	border-radius: 6px;
+	font-size: 15px;
+	overflow: hidden;
+	border: none;
+	font-family: 'Poppins', sans-serif;
+	/* border: 3px solid hsl(0, 87%, 67%); */
+	border: 3px solid transparent;
+}
+
+.warning-message {
+	/* display: none; */
+	color: hsl(0, 87%, 67%);
+	text-align: left;
+	font-size: 11px;
+	padding: 5px 0px;
+	font-weight: 100;
+	font-style: italic;
+}
+
+.link-form-wrapper form {
+	display: flex;
+	flex-direction: column;
+}
+
+.input-form {
+	display: flex;
+	flex-direction: column;
+}
+
+#submit-btn {
+	background-color: hsl(180, 66%, 49%);
+	padding: 11px 0px;
+	font-size: 17px;
+	font-weight: 600;
+	color: white;
+	border: none;
+	border-radius: 6px;
+	border: 3px solid transparent;
+}
+
+.item-shortened {
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	border-radius: 6px;
+	margin-bottom: 1.25rem;
+	border: 1px solid hsl(257, 27%, 26%);
+}
+
+.item-shortened__url {
+	display: flex;
+	flex-direction: column;
+	padding: 0.8rem;
+}
+
+.real-link {
+	text-align: left;
+	padding: 0.8rem;
+	border-bottom: 1px solid hsl(0, 0%, 75%);
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.real-link:hover {
+	cursor: default;
+}
+
+.item-shortened__url-link {
+	color: hsl(180, 66%, 49%);
+	text-align: left;
+	padding-bottom: 7px;
+}
+
+.item-shortened__url-link:hover {
+	cursor: default;
+}
+
+.item-shortened__url button {
+	background-color: hsl(180, 66%, 49%);
+	padding: 11px 0px;
+	font-size: 17px;
+	font-weight: 600;
+	color: white;
+	border: none;
+	border-radius: 6px;
+}
+
+.sec-section-title {
+	margin-top: 7rem;
+	padding-right: 1.25rem;
+	padding-left: 1.25rem;
+	padding-top: 0rem;
+	padding-bottom: 5rem;
+}
+
+.sec-section-title p {
+	color: hsl(257, 7%, 63%);
+}
+
+.brand-section {
+	padding-right: 1.25rem;
+	padding-left: 1.25rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	position: relative;
+	gap: 80px;
+	padding-bottom: 1.5rem;
+}
+
+.brand-feature-parent {
+	position: relative;
+	background-color: white;
+	border-radius: 5px;
+	padding: 1.25rem;
+}
+
+.brand-image {
+	width: 35px;
+	display: block;
+	margin: auto;
+}
+
+.brand-feature-parent h1 {
+	color: hsl(255, 11%, 22%);
+	padding-top: 2rem;
+	font-size: 1.25rem;
+	margin-bottom: 14px;
+}
+
+.brand-feature-parent p {
+	color: hsl(257, 7%, 63%);
+	font-size: 0.9rem;
+	margin-bottom: 7px;
+}
+
+.vertical-line {
+	background-color: hsl(180, 66%, 49%);
+	height: 87%;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 7px;
+}
+
+.boost {
+	font-weight: bold;
+	font-size: 1.25rem;
+	margin-bottom: 1rem;
+}
+
+#footer-started-btn {
+	margin-bottom: 1rem !important;
+	transition: background-color 0.5s;
+}
+
+#footer-started-btn:hover {
+	background-color: hsl(180deg 66% 79%);
+}
+
+.footer-brand-logo {
+	padding-top: 1.25rem;
+	padding-bottom: 1.25rem;
+}
+
+.footer-links-section ul {
+	color: white;
+	margin-bottom: 1.5rem;
+	list-style: none;
+}
+
+.footer-links-section ul h2 {
+	font-size: 0.9rem;
+	margin-bottom: 1rem;
+}
+
+.footer-links-section ul li a {
+	color: hsl(257, 7%, 63%);
+	font-size: 14px;
+	line-height: 27px;
+	text-decoration: none;
+	transition: color 0.3s;
+}
+
+.footer-links-section ul li a:hover {
+	color: hsl(180, 66%, 49%);
+}
+
+.social-media-icon path {
+	transition: fill 0.5s;
+}
+
+.social-media-icon:hover path {
+	fill: hsl(180, 66%, 49%);
+}
